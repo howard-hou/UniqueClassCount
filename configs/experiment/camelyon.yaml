@@ -1,0 +1,14 @@
+# @package _global_
+
+defaults:
+  - override /model: camelyon_ucc.yaml
+
+args:
+  dataset: camelyon
+  model_name: camelyon_ucc
+  patch_size: 32
+  batch_size: 16
+  data_augment: True
+  train_num_steps: 1000000
+  val_num_steps: 46
+  model_path: saved_models/camelyon_ucc_best.pth

@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - model: mnist_ucc.yaml
+  # experiment configs allow for version control of specific hyperparameters
+  - experiment: null
+args:
+  dataset: mnist
+  model_dir: saved_models/
+  model_name: mnist_ucc
+  num_instances: 32
+  ucc_start: 1
+  ucc_end: 4
+  batch_size: 20
+  num_workers: 4
+  learning_rate: 1e-4
+  num_bins: 11
+  num_features: 10
+  train_num_steps: 100000
+  val_num_steps: 200
+  save_interval: 1000
+  seed: 22
